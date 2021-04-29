@@ -1,0 +1,91 @@
+{
+	"info": {
+		"_postman_id": "6190c119-98a7-4584-8ab5-c7863a869aac",
+		"name": "ProyectoPrueba",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Obtener ordenes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://pizzeria-valentino.herokuapp.com/api/orders?Crust=THIN",
+					"protocol": "http",
+					"host": [
+						"pizzeria-valentino",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"orders"
+					],
+					"query": [
+						{
+							"key": "Crust",
+							"value": "THIN"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Obtener ordenes",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://pizzeria-valentino.herokuapp.com/api/orders?Crust=THIN",
+							"protocol": "http",
+							"host": [
+								"pizzeria-valentino",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"orders"
+							],
+							"query": [
+								{
+									"key": "Crust",
+									"value": "THIN"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "Esto es una prueba"
+				}
+			]
+		},
+		{
+			"name": "Mock Obtener ordenes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/orders?Crust=THIN",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"orders"
+					],
+					"query": [
+						{
+							"key": "Crust",
+							"value": "THIN"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
